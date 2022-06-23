@@ -1,0 +1,198 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+select {
+    height: 50px;
+    margin: 0 20px 0 20px;
+    border: 0;
+    outline: 0;
+}
+
+/* .page-header{
+    width: 100%;
+    height: 150px;
+    position: sticky;
+    top: -50px;
+} */
+
+.header-up{
+    width: 100%;
+    height: 50px;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(4, 4, 4);
+}
+
+.header-up-nav > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-up-title{
+    color: rgb(70, 68, 65);
+}
+
+.header-up-title span{
+    color: rgb(192, 27, 27);
+    padding-right: 30px;
+}
+
+.header-down{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.header-down-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-down-left img{
+    height: 30%;
+    padding-left: 10px;
+}
+
+.header-down-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-down-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-down-middle-nav > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-down-middle-nav > ul li a {
+    display: block;
+    /* color: white; */
+    padding: 0 0 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(25, 25, 25);
+}
+
+.header-down-middle-nav > ul li a::first-letter {
+    font-size: 21;
+}
+
+.header-down-middle-nav > ul li a:hover {
+    color: blueviolet;
+}
+
+.header-down-right-nav > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-down-right-nav > ul li a {
+    display: block;
+    /* color: white; */
+    padding: 0 30px 0 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(25, 25, 25);
+}
+
+.header-down-right-nav > ul li a:hover {
+    color: brown;
+}
+
+.header-down-right-nav > ul li a[target="_blank"] {
+    color: rgb(62, 53, 53);
+}
+/* main */
+
+.page-main{
+    /* padding-top: 50px; */
+}
+
+.banner{
+    background: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg) no-repeat center;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-title {
+    display: block;
+    font-size: 100px;
+    color: white;
+}
+
+.banner-time > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-time > ul li{
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-time > ul > li > span{
+    font-size: 20px;
+}
+
+.banner-button {
+    background-color: rgb(186, 31, 31);
+    padding: 10px;
+    margin: 20px;
+}
+
+.banner-button a {
+    color: white
+}
