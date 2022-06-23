@@ -1,0 +1,186 @@
+/* basic-selector */
+
+* {
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+
+.basic-selector p {
+    color: blue;
+}
+
+.basic-selector #id-selector {
+    color: red;
+}
+
+.basic-selector .class-selector {
+    color: yellow;
+}
+
+/* child-selector */
+
+.child-selector > .child{
+    background-color: bisque;
+}
+
+/* attribute-selector */
+
+.attribute-selector a[target="_blank"]{
+    color: white;
+    background-color: purple;
+}
+
+/* pseudo-class */
+
+.pseudo-class #link:link{
+    color: #FF0000;
+}
+
+.pseudo-class #visited:visited{
+    color: #00FF00;
+}
+
+.pseudo-class #hover:hover{
+    color: #FF00FF;
+}
+
+.pseudo-class #active:active{
+    color: #0000FF;
+}
+
+.pseudo-class > a:first-child{
+    font-weight: bold;
+}
+
+.pseudo-class > a:last-child{
+    font-weight: bold;
+}
+
+.pseudo-class > a:nth-child(3){
+    font-weight: bold;
+}
+
+/* pseudo-element */
+
+.pseudo-element #first-letter::first-letter{
+    color: #ff0000;
+    font-size: 40px;
+}
+
+.pseudo-element #first-line::first-line{
+    color: #0b6aaa;
+}
+
+.pseudo-element #before-after::before{
+    content: 'This is before---';
+}
+
+.pseudo-element #before-after::after{
+    content: '---this is after';
+}
+
+::marker{
+    color: red;
+    font-size: 23px;
+}
+
+/* box-model */
+
+.box-model{
+    display: block;
+    width: 200px;
+    padding: 10px;
+    border: 20px solid black;
+    margin: 30px;
+}
+
+/* text-font */
+
+.text-font #color{
+    color: #FF00FF;
+}
+
+.text-font #align{
+    text-align: justify;
+}
+
+.text-font #align-last{
+    text-align-last: center;
+}
+
+.text-font #direction-unicode-bidi{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.text-font #vertical-align #top{
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
+.text-font #vertical-align #bottom{
+    font-size: 10px;
+    vertical-align: text-bottom;
+}
+
+
+.text-font #decoration{
+    text-decoration: underline red double 5px;
+}
+
+.text-font #transform{
+    text-transform: uppercase;
+}
+
+.text-font #spacing{
+    text-indent: 50px;
+}
+
+.text-font #shadow{
+    text-shadow: 0 0 3px #ff0000;
+}
+
+.text-font #family{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-font #size{
+    font-size: 50px;
+}
+
+.text-font #google{
+    font-family: 'Fascinate', cursive;
+}
+
+/* color-background */
+
+.color-background #normal-color{
+    color: red;
+}
+
+.color-background #rgb{
+    color: rgb(9, 104, 46);
+}
+
+.color-background #rgb{
+    color: rgba(255, 0, 0, 0.3);
+}
+
+.color-background #hsl{
+    color: hsl(120, 100%, 50%);
+}
+
+.color-background #hsla{
+    color: hsla(120, 100%, 75%, 0.3);
+}
+
+.color-background #opacity{
+    opacity: 0.4;
+}
+
+.color-background #background{
+    background: url(https://nystudio107-ems2qegf7x6qiqq.netdna-ssl.com/img/blog/_1200x675_crop_center-center_82_line/image_optimzation.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
