@@ -129,6 +129,10 @@ select {
     color: rgb(25, 25, 25);
 }
 
+.header-down-right-nav > ul li a:hover {
+    color: brown;
+}
+
 .header-down-right-nav > ul li a[target="_blank"] {
     color: rgb(62, 53, 53);
 }
