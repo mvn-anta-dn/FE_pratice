@@ -1,0 +1,43 @@
+.attr:after {
+    content: attr(href);
+}
+
+.calc {
+    width: calc(100% - 100px);
+    background-color: yellow;
+    text-align: center;
+}
+
+.rgb {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(202, 90, 90);
+}
+
+.rgba {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(65, 163, 79, 0.5);
+}
+
+.rotate {
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: rotate(69deg);
+}
+
+.translate {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    transform: translate(100px, 100px);
+}
+
+.linear-gradient {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#bc23c1, #7dee48);
+}

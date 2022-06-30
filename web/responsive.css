@@ -1,0 +1,126 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../font/Lato-Regular.ttf);
+}
+
+@media only screen and (max-width: 1100px) {
+  .banner-title {
+    font-size: 80px;
+  }
+
+  .banner-time ul li {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .header-down-middle {
+    display: none;
+  }
+
+  .tel {
+    display: none;
+  }
+
+  .header-down-right ul li:last-child {
+    display: block;
+  }
+
+  .banner-title {
+    font-size: 60px;
+  }
+
+  .banner-time ul li {
+    font-size: 40px;
+  }
+
+  .header-down-right ul li {
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
+  .section-banner {
+    height: 550px;
+  }
+
+  .sales-list li:nth-child(3) {
+    display: none;
+  }
+
+  .product-item {
+    width: 48%;
+  }
+
+  .mega-left {
+    width: 48%;
+  }
+
+  .mega-right {
+    width: 48%;
+  }
+
+  .voucher-item {
+    width: 48%;
+  }
+
+  .voucher3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-up {
+    display: none;
+  }
+
+  .header-down {
+    height: 70px;
+    padding: 0 30px;
+  }
+
+  .banner-title {
+    font-size: 50px;
+  }
+
+  .banner-time ul li {
+    font-size: 30px;
+  }
+
+  .header-down-right ul li {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .section-banner {
+    height: 400px;
+  }
+
+  .sales-list li:nth-child(2) {
+    display: none;
+  }
+
+  .product-item {
+    width: 100%;
+  }
+
+  .product-list {
+    flex-flow: column wrap;
+  }
+
+  .voucher-item {
+    width: 100%;
+  }
+
+  .voucher2 {
+    display: none;
+  }
+
+  .slideshow-text p {
+    font-size: 13px;
+  }
+  .footer-child:nth-child(2),
+  .footer-child:nth-child(3),
+  .footer-child:nth-child(4) {
+    display: none;
+  }
+}
