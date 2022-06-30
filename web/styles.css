@@ -1,0 +1,631 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "myFirstFont", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+select {
+  height: 50px;
+  margin: 0 20px 0 20px;
+  border: 0;
+  outline: 0;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #444;
+  background-color: white;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.col-2 {
+  width: 16, 666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33, 333333333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+/* Header */
+/* header up */
+
+.header-up {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.header-up-nav {
+  margin-left: 50px;
+}
+
+.header-up-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.header-up-nav ul li,
+select {
+  font-size: 15px;
+}
+
+.line {
+  border-left: 1px solid rgb(195, 193, 193);
+  height: 15px;
+}
+
+.tel {
+  margin: 0 20px;
+  display: block;
+}
+
+.header-up-title {
+  margin-right: 70px;
+  font-size: 15px;
+}
+
+.header-up-title span {
+  color: #ff1c1c;
+}
+
+/* header down */
+
+.header-down {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.header-down-left img {
+  width: 103px;
+}
+
+.header-down-middle {
+  display: block;
+}
+
+.header-down-middle ul {
+  display: flex;
+  justify-content: center;
+}
+
+.header-down-middle ul li {
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-down-middle ul li:hover {
+  color: #6610f2;
+}
+
+.header-down-middle ul li:first-child {
+  padding-left: 0px;
+}
+
+.header-down-right ul {
+  display: flex;
+  justify-content: center;
+}
+
+.header-down-right ul li {
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.header-down-right ul li:hover {
+  color: #6610f2;
+}
+
+.header-down-right ul li:first-child {
+  padding-left: 0px;
+}
+
+.header-down-right ul li:last-child {
+  display: none;
+}
+
+/* main */
+/* banner */
+
+.section-banner {
+  background-image: url(https://flone.reactdemo.hasthemes.com/assets/img/slider/slider-37.jpg);
+  background-repeat: no-repeat;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.banner-title {
+  font-size: 100px;
+}
+
+.banner-time ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-time ul li {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.banner-time ul li:first-child {
+  padding-left: 0px;
+}
+
+.banner-time ul li span {
+  font-size: 15px;
+}
+
+.banner-button {
+  width: 150px;
+  background-color: rgb(186, 31, 31);
+  padding: 15px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-button:hover {
+  background-color: #6610f2;
+}
+
+/* section sale */
+
+.sales-list {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.sales-item {
+  background-image: url(https://flone.reactdemo.hasthemes.com/assets/img/banner/banner-59.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: block;
+}
+
+.sales-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 30px;
+}
+
+.sales-text p:first-child {
+  color: #ff1c1c;
+}
+
+/* section product */
+
+.section-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-product h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.product-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.product-menu-item:first-child {
+  color: #ff1c1c;
+  text-decoration: underline;
+}
+
+.product-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.product-item {
+  width: 23%;
+}
+
+.product-image {
+  background-image: url(https://flone.reactdemo.hasthemes.com/assets/img/product/furnitures/2.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.product-tag {
+  position: absolute;
+  top: 2%;
+  left: 85%;
+  color: #6610f2;
+}
+
+.product-tag p:first-child {
+  color: pink;
+}
+
+.product-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.product-icon button {
+  border-radius: 50%;
+  background-color: #6610f2;
+  padding: 15px;
+  color: white;
+}
+
+.product-image:hover .product-icon {
+  display: block;
+}
+
+.product-icon button:hover {
+  background-color: pink;
+}
+
+.product-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.product-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.product-text p:first-child {
+  padding-bottom: 5px;
+}
+
+.product-text p:first-child:hover {
+  color: #6610f2;
+}
+
+.product-text span {
+  color: #ff1c1c;
+}
+
+.section-product > a {
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.section-product a:hover {
+  color: #6610f2;
+}
+
+/* section mega sale */
+
+.section-mega-sale > .container {
+  display: flex;
+  margin-top: 100px;
+  gap: 30px;
+}
+
+.mega-left {
+  background-image: url(https://flone.reactdemo.hasthemes.com/assets/img/banner/banner-56.png);
+  background-repeat: no-repeat;
+  width: 650px;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mega-left a {
+  background-color: #ff1c1c;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.mega-right {
+  width: calc(100% - 650px);
+}
+
+.mega-up {
+  background-image: url(https://flone.reactdemo.hasthemes.com/assets/img/banner/banner-57.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 290px;
+  margin-bottom: 20px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mega-down {
+  background-image: url(https://flone.reactdemo.hasthemes.com/assets/img/banner/banner-58.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 290px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mega-text {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 30px;
+}
+
+.mega-text p:first-child {
+  color: #ff1c1c;
+}
+
+.mega-text p:nth-child(2) {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mega-text p:nth-child(3) {
+  font-size: 20px;
+}
+
+.btn-image {
+  border: 3px solid #ff1c1c;
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-left: 8px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #ff1c1c;
+}
+
+/* section voucher */
+
+.voucher-list {
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.voucher-item {
+  height: 130px;
+  width: 31%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.voucher1 {
+  background-color: rgb(204, 251, 233);
+}
+
+.voucher2 {
+  background-color: rgb(201, 207, 160);
+}
+
+.voucher3 {
+  background-color: rgb(128, 205, 169);
+}
+
+/* section slideshow */
+
+.section-slideshow {
+  background-image: url(https://flone.reactdemo.hasthemes.com/assets/img/bg/testimonial-bg-3.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 460px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.slideshow-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+
+.slideshow-text i {
+  padding: 10px 0;
+}
+
+/* section newsletter */
+
+.section-newsletter {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.newsletter-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.newsletter-text h2 {
+  margin-bottom: 20px;
+}
+
+.newsletter-text form {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-none-outline {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(194, 185, 185);
+}
+
+.input-none-outline:focus-visible {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(194, 185, 185);
+}
+
+.newsletter-text form button {
+  width: 150px;
+  background-color: rgb(186, 31, 31);
+  padding: 15px;
+  position: absolute;
+  border-radius: 40px;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.section-swipe {
+  height: 300px;
+  overflow: hidden;
+}
+
+.section-swipe ul {
+  display: flex;
+}
+
+/* footer */
+
+.page-footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer-child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-child h4 {
+  padding-bottom: 20px;
+}
+
+.footer-child form button {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer-nav li {
+  padding-bottom: 20px;
+}
+
+.fa-angle-down {
+  font-size: 13px;
+}
