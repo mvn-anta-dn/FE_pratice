@@ -1,102 +1,84 @@
-// Javascript ES6 Exercise
-
-// Convert the code below from ES5 to ES6 and answer the question
-
-// 1. Define a variable
-const MAX_SIZE = 25 * 1024 * 1024;
-let title = "Hello World";
-title = "Hello ES6";
-// - Question: Let and Const – What's the Difference?
-// + let: . Được khai báo sẽ có block scope
-//        . Được cập nhập lại biến chứ không cho khai báo lại
-// + const: . Phải đặt giá trị khi khai báo biến,
-//          .không thể tái khai báo biến, hay cập nhật giá trị, các loại giá trị tham chiếu có thế thay đổi thuộc tính bên trong nó
-
-// 2. String Interpolation
-const user = { name: "David" };
-const card = { amount: 7, product: "Bar", unitPrice: 42 };
-let message = `Hello ${user.name}, 
-want to buy ${card.amount} ${card.product} for 
-a total of ${card.amount * card.unitPrice} bucks?`;
-
-// 3. Rest Parameter
-function foo(x, y, ...arguments) {
-  return (x + y) * arguments.length;
-}
-foo(1, 2, "hello", true, 7) === 9;
-
-// 4. Default Parameter Values
-function sum(x, y = 7, z = 42) {
-  return x + y + z;
-}
-
-// 5. Arrow Functions
-const evens = [1, 2, 3, 4, 5, 6];
-let odds = evens.map((v) => {
-  return v + 1;
-});
-let pairs = evens.map((v) => {
-  return { even: v, odd: v + 1 };
-});
-let nums = evens.map((v, i) => {
-  return v + i;
-});
-const fives = [];
-nums.forEach((v) => {
-  if (v % 5 === 0) {
-    fives.push(v);
-  }
-});
-
-// 6. Classes
-class Shape {
-  constructor(id, x, y) {
-    this.id = id;
-    this.move(x, y);
-  }
-  move(x, y) {
-    this.x = x;
-    this.y = y;
-  }
-}
-
-// 7. Modules
-
-// 8. Promise
-function showMessAfterTimeout(msg, who, timeout) {
-  return new Promise((resolve, reject) => {
-    try {
-      setTimeout(() => {
-        resolve(`${msg} Hi ${who}!`);
-      }, timeout);
-    } catch (error) {
-      reject(error);
-    }
+$(document).ready(function () {
+  $.ajax({
+    type: "GET",
+    dataType: "application/json",
+    url: "https://reqres.in/api/users",
+    dataType: "json",
+    success: function (data) {
+      renderListUser(data);
+    },
   });
-}
+});
 
-showMessAfterTimeout("", "Foo", 100)
-  .then((msg) => showMessAfterTimeout(msg, "Bar", 100))
-  .then((msg) => console.log(`Finish after 300ms: ${msg}`))
-  .catch((error) => console.log(error));
+const renderListUser = (data) => {
+  let listItem = document.querySelector(".list-user-ajax");
+  let listUser = data.data;
+  for (let i = 0; i < listUser.length; i++) {
+    const ele = listUser[i];
+    listItem.innerHTML += `
+                <li>
+                  <div class="card" style="width: 18rem;">
+                  <img src="${ele.avatar}" class="card-img-top" alt="${
+      ele.avatar
+    }">
+                  <div class="card-body">
+                    <h5 class="card-title">${
+                      ele.first_name + " " + ele.last_name
+                    }</h5>
+                    <p class="card-text">${ele.email}</p>
+                    <button type="button" class="btn btn-primary" onClick="handleDetail(${
+                      ele.id
+                    })" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      See more
+                    </button>
+                  </div>
+                  </div>
+                </li>
+          `;
+  }
+};
 
-// 9. Loops
-let arr = [
-  {
-    id: 1,
-    name: "Ta Van An",
-    position: "Intern",
-  },
-  {
-    id: 2,
-    name: "Some Random Guy",
-    position: "CEO",
-  },
-];
+fetch("https://reqres.in/api/unknown")
+  .then((response) => response.json())
+  .then((data) => renderListResource(data));
 
-for (const ele of arr) {
-  console.log(ele.name);
-}
+const renderListResource = (data) => {
+  let table = document.querySelector(".list-user-fetch");
+  let listResource = data.data;
+  for (let i = 0; i < listResource.length; i++) {
+    const ele = listResource[i];
+    table.innerHTML += `
+                  <tr>
+                    <td>${ele.id}</td>
+                    <td>${ele.name}</td>
+                    <td>${ele.pantone_value}</td>
+                    <td>${ele.year}</td>
+                    <td style="display:flex"><div style="width:20px;height:20px;background-color:${ele.color}"></div>${ele.color}</td>
+                  </tr>
+            `;
+  }
+};
 
-let index = arr.findIndex((item) => item.name === "Ta Van An");
-console.log(index);
+const handleDetail = async (id) => {
+  await fetch(`https://reqres.in/api/users/${id}`)
+    .then((response) => response.json())
+    .then((data) => renderUserDetail(data));
+};
+
+const renderUserDetail = (data) => {
+  let item = document.querySelector(".modal-body");
+  let listResource = data.data;
+  item.innerHTML = `
+  <div class="card" style="width: 100%;">
+  <img src="${listResource.avatar}" class="card-img-top" alt="${
+    listResource.avatar
+  }">
+  <div class="card-body">
+    <h5 class="card-title">${
+      listResource.first_name + " " + listResource.last_name
+    }</h5>
+    <p class="card-text">${listResource.email}</p>
+  </div>
+  </div>
+            `;
+};
