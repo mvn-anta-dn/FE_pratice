@@ -35,7 +35,7 @@ function prevPage() {
 }
 
 function nextPage() {
-  if (currentPage < numPages()) {
+  if (currentPage < numPages(products)) {
     currentPage++;
     renderUI(products, currentPage);
   }
@@ -43,7 +43,7 @@ function nextPage() {
 
 function renderUI(currentProducts, page) {
   if (page < 1) page = 1;
-  if (page > numPages()) page = numPages();
+  if (page > numPages(currentProducts)) page = numPages(currentProducts);
 
   productsEle.innerHTML = "";
   pagination.innerHTML = "";
@@ -71,7 +71,7 @@ function renderUI(currentProducts, page) {
     productsEle.innerHTML = `<h2 style="display:flex; justify-content:center;">No item found</h2>`;
   }
 
-  for (let i = 0; i < numPages(); i++) {
+  for (let i = 0; i < numPages(currentProducts); i++) {
     pagination.innerHTML += `<a href="#" class="${
       currentPage === i + 1 ? "active" : ""
     }" onClick="handlePage(${i + 1})">${i + 1}</a>`;
@@ -83,15 +83,15 @@ function renderUI(currentProducts, page) {
     btnPrev.style = "pointer-events:auto; color:black";
   }
 
-  if (page == numPages()) {
+  if (page == numPages(currentProducts)) {
     btnNext.style = "pointer-events:none; color:grey";
   } else {
     btnNext.style = "pointer-events:auto; color:black";
   }
 }
 
-function numPages() {
-  return Math.ceil(products.length / recordPerPage);
+function numPages(data) {
+  return Math.ceil(data.length / recordPerPage);
 }
 
 input.oninput = () => {
