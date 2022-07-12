@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "myFirstFont", sans-serif;
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #444;
+  background-color: white;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.col-2 {
+  width: 16, 666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33, 333333333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+/* header */
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: rgb(223, 230, 230);
+  z-index: 10;
+}
+
+.logo {
+  width: 200px;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.avatar {
+  width: 20px;
+}
+
+.user-menu p {
+  font-size: 20px;
+}
+
+/* main */
+
+.page-main {
+  margin: 70px 0 20px 0;
+}
+
+.product {
+}
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input-search {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+.btn-search {
+  background-color: rgb(236, 177, 177);
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.btn-search:focus,
+.input-search:focus {
+  outline: none;
+  background-color: aliceblue;
+}
+
+.search.active .input-search {
+  width: 200px;
+}
+
+.search.active .btn-search {
+  transform: translateX(150px);
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title button {
+  background-color: rgb(133, 224, 168);
+  color: white;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* table */
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 10px 0 0 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table thead {
+  font-weight: bold;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+table img {
+  width: 100px;
+}
+/* footer */
+
+.page-footer {
+  background-color: #d0daee;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-content-right {
+  padding-right: 40px;
+  margin-top: 20px;
+  float: right;
+}
+
+.icon-style {
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+/* button */
+
+.btn {
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 16px 32px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn-update {
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
+}
+
+.btn-update:hover {
+  background-color: #008cba;
+  color: white;
+}
+
+.btn-delete {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+}
+
+.btn-delete:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* form */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  position: relative;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.upload {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  opacity: 0;
+}
+
+.upload-icon i {
+  /* margin-right: 8px; */
+  font-size: 50px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20px 20px 0 0;
+}
+
+.pagination a {
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.upload-image {
+  display: flex;
+  align-items: center;
+}
+
+#preview-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-left: 50px;
+  border: 1px solid #ccc;
+}

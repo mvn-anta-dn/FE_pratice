@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html"
+        ><img
+          class="logo"
+          src="https://pic.trangvangvietnam.com/395750083/MonstarLab-Logo.png"
+          alt="logo"
+      /></a>
+
+      <div class="user-menu">
+        <img
+          class="avatar"
+          src="https://cdn.icon-icons.com/icons2/2506/PNG/512/user_icon_150670.png"
+          alt="user"
+        />
+        <a href=""><p>Log out</p></a>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="add-product">
+        <div class="container">
+          <h2 class="page-title" style="padding-top: 10px">
+            Create/Update product
+          </h2>
+          <form class="create">
+            <div class="row">
+              <input
+                id="id"
+                type="hidden"
+                name="id"
+                placeholder="Product id.."
+                required=""
+              />
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Name</label>
+              </div>
+              <div class="col-75">
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Product name.."
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Price</label>
+              </div>
+              <div class="col-75">
+                <input
+                  id="price"
+                  type="number"
+                  name="price"
+                  placeholder="Product price.."
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Image</label>
+              </div>
+              <div class="col-75" style="display: flex; align-items: center">
+                <input id="image" type="file" class="upload" />
+                <div class="upload-icon">
+                  <i class="fa-solid fa-upload"></i>
+                </div>
+                <img id="preview-image" src="" alt="preview" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Amount</label>
+              </div>
+              <div class="col-75">
+                <input
+                  id="amount"
+                  type="number"
+                  name="amount"
+                  placeholder="Product amount.."
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Type</label>
+              </div>
+              <div class="col-75">
+                <select name="type" id="type">
+                  <option value="electric">Electric</option>
+                  <option value="housewares">Housewares</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Description</label>
+              </div>
+              <div class="col-75">
+                <textarea
+                  id="description"
+                  name="description"
+                  placeholder="Write something.."
+                  style="height: 175px"
+                  required=""
+                ></textarea>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- <footer class="page-footer">
+      <div class="footer-content-right">
+        <a href="https://github.com/mvn-anta-dn"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png?w=360"
+            class="icon-style"
+            alt="Github icon"
+        /></a>
+        <a href="https://github.com/mvn-anta-dn"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/934px-Twitter-logo.svg.png"
+            class="icon-style"
+            alt="Twitter icon"
+        /></a>
+        <a href="https://github.com/mvn-anta-dn"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/552/552486.png?w=360"
+            class="icon-style"
+            alt="Email icon"
+        /></a>
+      </div>
+    </footer> -->
+    <script src="./javascript/handleForm.js"></script>
+  </body>
+</html>
