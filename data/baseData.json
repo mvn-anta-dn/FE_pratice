@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Apple Pencil (2nd Generation), White",
+    "price": 250,
+    "image":
+      "https://flone.reactdemo.hasthemes.com/assets/img/product/furnitures/2.jpg",
+    "amount": 242,
+    "type": "electric",
+    "description": "this is a description"
+  },
+  {
+    "id": 2,
+    "name": "HP DeskJet 2755e Wireless Color All-in-One Printer with bonus 6 months Instant Ink with HP+ (26K67A)",
+    "price": 350,
+    "image":
+      "https://flone.reactdemo.hasthemes.com/assets/img/product/furnitures/5.jpg",
+    "amount": 242,
+    "type": "electric",
+    "description": "this is a description"
+  },
+  {
+    "id": 3,
+    "name": "Sceptre 24' Professional Thin 75Hz 1080p LED Monitor 2x HDMI VGA Build-in Speakers, Machine Black (E248W-19203R Series)",
+    "price": 2200,
+    "image":
+      "https://flone.reactdemo.hasthemes.com/assets/img/product/furnitures/4.jpg",
+    "amount": 242,
+    "type": "electric",
+    "description": "this is a description"
+  },
+  {
+    "id": 4,
+    "name": "Roku Streaming Stick 4K 2021 | Streaming Device 4K/HDR/Dolby Vision with Roku Voice Remote and TV",
+    "price": 1244,
+    "image":
+      "https://flone.reactdemo.hasthemes.com/assets/img/product/furnitures/1.jpg",
+    "amount": 242,
+    "type": "electric",
+    "description": "this is a description"
+  },
+  {
+    "id": 5,
+    "name": "Roku Express | HD Streaming Media Player with High Speed HDMI Cable and Simple Remote",
+    "price": 200,
+    "image":
+      "https://flone.reactdemo.hasthemes.com/assets/img/product/furnitures/3.jpg",
+    "amount": 242,
+    "type": "electric",
+    "description": "this is a description"
+  },
+  {
+    "id": 6,
+    "name": "SanDisk 128GB Ultra microSDXC UHS-I Memory Card with Adapter ",
+    "price": 30,
+    "image":
+      "https://flone.reactdemo.hasthemes.com/assets/img/product/furnitures/8.jpg",
+    "amount": 242,
+    "type": "electric",
+    "description": "this is a description"
+  }
+]
